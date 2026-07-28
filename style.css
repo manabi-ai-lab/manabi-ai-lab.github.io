@@ -1,0 +1,122 @@
+:root{
+  --ink:#16181d;
+  --muted:#5d6470;
+  --line:#e3e6ec;
+  --bg:#fbfbfc;
+  --card:#ffffff;
+  --accent:#b5452f;
+  --gold:#c8973a;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --ink:#e9ecf1;
+    --muted:#9aa3b2;
+    --line:#2a2f39;
+    --bg:#101318;
+    --card:#171b22;
+    --accent:#e08063;
+    --gold:#d9ae5c;
+  }
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",YuGothic,"Noto Sans JP",system-ui,sans-serif;
+  line-height:1.85;
+  font-size:16px;
+  letter-spacing:.01em;
+}
+.wrap{width:min(880px,calc(100% - 2.5rem));margin-inline:auto}
+
+/* hero */
+.hero{
+  padding:5.5rem 0 4rem;
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(120% 90% at 12% -10%, color-mix(in srgb, var(--gold) 16%, transparent), transparent 60%),
+    radial-gradient(100% 80% at 92% 0%, color-mix(in srgb, var(--accent) 13%, transparent), transparent 62%);
+}
+.kicker{
+  margin:0 0 .9rem;
+  font-size:.72rem;
+  letter-spacing:.34em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.hero h1{
+  margin:0;
+  font-size:clamp(2.4rem,7.5vw,3.9rem);
+  line-height:1.18;
+  letter-spacing:.06em;
+  font-weight:700;
+}
+.lead{margin:1.2rem 0 0;color:var(--muted);font-size:1.02rem}
+
+/* sections */
+main{padding-bottom:4rem}
+section{padding-top:3.6rem}
+h2{
+  margin:0 0 .4rem;
+  font-size:1.32rem;
+  letter-spacing:.05em;
+  padding-left:.75rem;
+  border-left:4px solid var(--gold);
+}
+.note{margin:.6rem 0 1.9rem;color:var(--muted);font-size:.93rem}
+.body{margin:1rem 0 0;font-size:.97rem;color:var(--muted);max-width:62ch}
+.body strong{color:var(--ink)}
+
+/* memo list */
+.notes-list{display:flex;flex-direction:column;gap:.9rem}
+.memo{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-left:3px solid var(--accent);
+  border-radius:10px;
+  padding:1.25rem 1.5rem;
+}
+.memo h3{margin:0 0 .5rem;font-size:1rem;line-height:1.55}
+.memo p{margin:0;font-size:.92rem;color:var(--muted)}
+.memo strong{color:var(--ink)}
+
+/* cards */
+.grid{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:1.4rem 1.5rem 1.2rem;
+}
+.card.next{border-style:dashed;background:transparent}
+.era{
+  margin:0 0 .35rem;
+  font-size:.74rem;
+  letter-spacing:.18em;
+  color:var(--accent);
+  font-weight:700;
+}
+.card h3{margin:0 0 .6rem;font-size:1.07rem;line-height:1.5}
+.card p{margin:0 0 .8rem;font-size:.92rem;color:var(--muted)}
+
+.links{display:flex;flex-wrap:wrap;gap:1.1rem;margin:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 35%,transparent)}
+a:hover{border-bottom-color:var(--accent)}
+.links a{font-size:.9rem;font-weight:700}
+
+/* plan */
+.plan{margin:0;padding-left:1.15rem}
+.plan li{margin-bottom:.7rem;color:var(--muted);font-size:.95rem}
+.plan strong{color:var(--ink)}
+
+footer{
+  border-top:1px solid var(--line);
+  padding:2rem 0 3rem;
+  font-size:.85rem;
+  color:var(--muted);
+}
+footer p{margin:0}
