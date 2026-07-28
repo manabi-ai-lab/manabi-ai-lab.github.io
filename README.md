@@ -15,6 +15,11 @@ educators/        教育 × AI 実践ノート（大人向け）
 projects/         制作実績（工程の記録）
 about/            このサイトについて
 style.css         全ページ共通
+404.html          存在しないURL用（GitHub Pagesが自動で使う）
+favicon.svg       ファビコン
+sitemap.xml       検索エンジン用。ページを増やしたらここにも1行足す
+robots.txt        sitemap.xml の場所を知らせるだけ
+.nojekyll         GitHub Pages の Jekyll ビルドを止める
 ```
 
 フレームワークは意図的に入れていない。1ページ足せば即公開できる軽さを優先する。
@@ -25,6 +30,7 @@ style.css         全ページ共通
 - 作品が増えたら … `kids/` と `projects/` にカードを1枚ずつ
 - 制作で新しく詰まったことがあれば … `educators/` に `.memo` を1つ
 - **新しいページを作る前に、既存ページに足せないか考える**
+- 新しいページを作ったら … `sitemap.xml` に1行、各ページのフッターに1リンク足す
 
 ## 公開前に必ず
 
