@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>制作実績｜MANABI LAB</title>
+<meta name="description" content="学習MVを企画から公開まで一人で作る工程の記録。何に困り、どう考え、どこを直したか。">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="hero small">
+  <div class="wrap">
+    <p class="kicker"><a href="../">MANABI LAB</a> / 制作実績</p>
+    <h1>制作実績</h1>
+    <p class="lead">
+      完成品だけでなく、そこに至るまでを残しています。<br>
+      何に困り、どう考え、どこを直したか。
+    </p>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="case">
+  <h2>ケース：学習MVを1本作る</h2>
+  <p class="note">
+    『KOFUNビート★時代ジャンプ』『和を以て 〜聖徳太子〜』の2本で確立した工程です。
+    企画から公開まで一人で行い、所要はおよそ1日。
+  </p>
+
+  <ol class="steps">
+    <li>
+      <h3>1. 曲をつくる</h3>
+      <p>
+        覚えたい年号・語呂・キーワードを先に決め、それが歌詞に必ず入る形で作曲します。
+        <strong>タイトルに語呂が入っている曲は強い。</strong>
+        「鳴くようぐいす平安京」のような語は、テスト前の子どもが実際に検索する言葉だからです。
+      </p>
+    </li>
+    <li>
+      <h3>2. 拍を測る</h3>
+      <p>
+        映像を曲に同期させるため、テンポと小節の頭を割り出します。
+        既製の自動検出は静かな区間でずれるため、独自に周期と位相を探索する方式に置き換えました。
+        <strong>ここが1%ずれると、終盤で誰の目にも分かる</strong>ほど映像が遅れます。
+      </p>
+    </li>
+    <li>
+      <h3>3. 歌詞を時刻に貼る</h3>
+      <p>
+        1行ずつ開始・終了の秒を与えます。2行を1組にして、
+        歌っている行を明るく・もう片方を半透明にするカラオケ方式にすると、
+        <strong>歌詞が読める時間が伸びて学習用途に効きます。</strong>
+        歌のない間奏は、語呂の総復習を出す一番おいしい場所になります。
+      </p>
+    </li>
+    <li>
+      <h3>4. 絵を用意する</h3>
+      <p>
+        場面ごとに画像を生成します。案内役のキャラクターは
+        参照シートを毎回添付して、シリーズを通して同じ顔に保ちます。
+        <strong>素材の解像度は先に全部測る。</strong>これが「どこまで寄れるか」を決めるからです。
+      </p>
+    </li>
+    <li>
+      <h3>5. 人物を動かす</h3>
+      <p>
+        静止画のままだと紙芝居になるので、画像から動画を生成します。
+        ここで新しい問題が出ました——被写体が画面内で移動するため、
+        元画像で決めた構図の基準が使えません。
+        <strong>動きの量を数値で測り、動きが大きいカットほど寄りを浅くする</strong>規則にして解決しました。
+      </p>
+    </li>
+    <li>
+      <h3>6. カットを割る</h3>
+      <p>
+        1〜2小節（1.5〜3秒）を基調に割ります。素材12枚から70カット組めます。
+        レンダリング前に全カットの構図を1枚に並べて確認します。
+        <strong>この確認を飛ばすと、20分のレンダリング後に頭が切れているカットを見つけることになります。</strong>
+      </p>
+    </li>
+    <li>
+      <h3>7. 公開する</h3>
+      <p>
+        本編（横）と、語呂だけを25秒に詰めたショート（縦）の2本立て。
+        ショートには本編を関連動画として設定します——
+        <strong>ショートから本編への導線はこれ一本</strong>で、説明欄のURLはほぼ踏まれません。
+      </p>
+    </li>
+  </ol>
+</section>
+
+<section id="tools">
+  <h2>やっていること・任せていること</h2>
+  <div class="grid two">
+    <article class="card">
+      <h3>AIに任せている</h3>
+      <p>作曲、場面画像の生成、静止画から動画への変換、下書きの文章、繰り返しの処理。</p>
+    </article>
+    <article class="card">
+      <h3>人が持っている</h3>
+      <p>歌詞と年号の正確さ、史実の扱い、拍の同期、構図の確認、公開範囲の判断。</p>
+    </article>
+  </div>
+  <p class="body">
+    工程のほとんどにAIが入っていますが、<strong>境界を決めることそのものが仕事</strong>になっています。
+    どこを任せて、どこを持つか。その判断の記録が
+    <a href="../educators/">実践ノート</a>です。
+  </p>
+</section>
+
+<section id="output">
+  <h2>成果物</h2>
+  <div class="grid">
+    <article class="card">
+      <p class="era">飛鳥時代</p>
+      <h3>和を以て 〜聖徳太子〜</h3>
+      <p>本編1分58秒／66カット。ショート25秒。年号5つを語呂で。</p>
+      <p class="links"><a href="https://youtu.be/dq723d6qgK0">本編</a><a href="https://youtube.com/shorts/GEMVrKZs8wQ">ショート</a></p>
+    </article>
+    <article class="card">
+      <p class="era">古墳時代</p>
+      <h3>KOFUNビート★時代ジャンプ</h3>
+      <p>本編／ショート。倭の五王を歌の順番ごと覚える構成。</p>
+      <p class="links"><a href="https://youtu.be/Y1OiQgLJ-XU">本編</a><a href="https://youtube.com/shorts/k9zKzA2j8Bk">ショート</a></p>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav class="fnav">
+      <a href="../">トップ</a>
+      <a href="../kids/">まなびソング</a>
+      <a href="../educators/">実践ノート</a>
+      <a href="../projects/">制作実績</a>
+      <a href="../about/">このサイトについて</a>
+    </nav>
+    <p class="copy">MANABI LAB — 教育 × AI</p>
+  </div>
+</footer>
+
+</body>
+</html>

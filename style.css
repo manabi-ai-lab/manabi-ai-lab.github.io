@@ -113,10 +113,101 @@ a:hover{border-bottom-color:var(--accent)}
 .plan li{margin-bottom:.7rem;color:var(--muted);font-size:.95rem}
 .plan strong{color:var(--ink)}
 
+/* hero variant for sub pages */
+.hero.small{padding:3.4rem 0 2.6rem}
+.hero.small h1{font-size:clamp(1.8rem,5.5vw,2.6rem)}
+.kicker a{color:inherit;border-bottom-color:transparent}
+.kicker a:hover{border-bottom-color:currentColor}
+
+/* gate cards on the top page */
+.gate{
+  display:block;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:1.6rem 1.7rem 1.4rem;
+  color:inherit;
+  border-bottom-width:1px;
+  transition:border-color .15s ease;
+}
+.gate:hover{border-color:var(--accent)}
+.gate-tag{
+  margin:0 0 .5rem;
+  font-size:.76rem;
+  letter-spacing:.1em;
+  color:var(--accent);
+  font-weight:700;
+}
+.gate h3{margin:0 0 .6rem;font-size:1.22rem}
+.gate p{margin:0 0 .9rem;font-size:.93rem;color:var(--muted)}
+.gate-go{margin:0;font-size:.88rem;font-weight:700;color:var(--accent)}
+
+/* song blocks (kids) */
+.song{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:1.5rem 1.6rem 1.3rem;
+  margin-bottom:1.1rem;
+}
+.song.next{border-style:dashed;background:transparent}
+.song h3{margin:0 0 .5rem;font-size:1.18rem}
+.song > p{margin:0 0 1rem;font-size:.95rem;color:var(--muted)}
+.gorou{list-style:none;margin:0 0 1.1rem;padding:0}
+.gorou li{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:.2rem .8rem;
+  padding:.55rem 0;
+  border-top:1px solid var(--line);
+  font-size:.95rem;
+}
+.gorou li b{color:var(--gold);font-size:1.06rem;letter-spacing:.02em}
+.gorou li span{color:var(--muted);font-size:.87rem}
+
+/* takeaway line inside memos */
+.memo p + p{margin-top:.7rem}
+.takeaway{
+  margin-top:1rem;
+  padding-top:.85rem;
+  border-top:1px dashed var(--line);
+  font-size:.9rem;
+}
+.takeaway b{color:var(--ink)}
+
+/* numbered steps */
+.steps{list-style:none;margin:0;padding:0;counter-reset:step}
+.steps li{
+  position:relative;
+  padding:0 0 1.5rem 0;
+  border-left:2px solid var(--line);
+  padding-left:1.6rem;
+  margin-left:.4rem;
+}
+.steps li:last-child{border-left-color:transparent;padding-bottom:0}
+.steps li::before{
+  content:"";
+  position:absolute;
+  left:-7px;top:.6rem;
+  width:12px;height:12px;
+  border-radius:50%;
+  background:var(--gold);
+}
+.steps h3{margin:0 0 .5rem;font-size:1.03rem}
+.steps p{margin:0;font-size:.93rem;color:var(--muted)}
+.steps strong{color:var(--ink)}
+.card h3 a{border-bottom-color:transparent}
+.card h3 a:hover{border-bottom-color:var(--accent)}
+
 footer{
   border-top:1px solid var(--line);
+  margin-top:3.5rem;
   padding:2rem 0 3rem;
   font-size:.85rem;
   color:var(--muted);
 }
 footer p{margin:0}
+.fnav{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin-bottom:1rem}
+.fnav a{font-size:.88rem}
+.copy{font-size:.8rem;letter-spacing:.06em}
