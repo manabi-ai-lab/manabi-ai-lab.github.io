@@ -26,18 +26,19 @@
 
 ## 3. 成果物の所在
 
+**main には置いていません。** 作業ブランチ `claude/gyoki-bosatsu-beat-draft-9gndo7` にあります。
 AIに読ませる場合はこちらを使ってください（push 直後から最新が返ります）。
 
 ```
-https://raw.githubusercontent.com/manabi-ai-lab/manabi-ai-lab.github.io/main/drafts/gyoki-bosatsu-beat/post-draft.md
-https://raw.githubusercontent.com/manabi-ai-lab/manabi-ai-lab.github.io/main/drafts/gyoki-bosatsu-beat/README.md
-https://raw.githubusercontent.com/manabi-ai-lab/manabi-ai-lab.github.io/main/drafts/gyoki-bosatsu-beat/report.md
+https://raw.githubusercontent.com/manabi-ai-lab/manabi-ai-lab.github.io/refs/heads/claude/gyoki-bosatsu-beat-draft-9gndo7/drafts/gyoki-bosatsu-beat/post-draft.md
+https://raw.githubusercontent.com/manabi-ai-lab/manabi-ai-lab.github.io/refs/heads/claude/gyoki-bosatsu-beat-draft-9gndo7/drafts/gyoki-bosatsu-beat/README.md
+https://raw.githubusercontent.com/manabi-ai-lab/manabi-ai-lab.github.io/refs/heads/claude/gyoki-bosatsu-beat-draft-9gndo7/drafts/gyoki-bosatsu-beat/report.md
 ```
 
 人が読む場合はこちらです。
 
 ```
-https://github.com/manabi-ai-lab/manabi-ai-lab.github.io/tree/main/drafts/gyoki-bosatsu-beat
+https://github.com/manabi-ai-lab/manabi-ai-lab.github.io/tree/claude/gyoki-bosatsu-beat-draft-9gndo7/drafts/gyoki-bosatsu-beat
 ```
 
 | ファイル | 内容 |
@@ -65,14 +66,17 @@ GitHub Pages 側のURL（`https://manabi-ai-lab.github.io/drafts/...`）は参�
 | `36565d7` | 投稿文ドラフトと引き継ぎメモを追加 |
 | `b395962` | 上記を main にマージ |
 | `dffe09b` | `.nojekyll` を追加、引き継ぎメモに参照URLと公開範囲の注意を追記 |
+| `51696ac` | この報告書を追加 |
+| （main） | **`drafts/` を main から削除**（`.nojekyll` は残置） |
 
 公開範囲について、以下を確認・対応しました。
 
-- **リポジトリは public です**。したがって `drafts/` 配下は GitHub 上から誰でも読める状態にあります。作業ブランチの時点から同様でした。
-- main へのマージにより GitHub Pages のビルド対象に入るため、リポジトリ直下に **`.nojekyll` を配置**し、`manabi-ai-lab.github.io/drafts/...` で HTML として表示されないようにしました。
-- サイトは全5ページが素の HTML で、Jekyll の front matter・`_config.yml`・`_` 始まりのディレクトリを一切使っていないことを確認済みです。**`.nojekyll` によるサイト表示への影響はありません**。
-- `.nojekyll` は Pages のビルドにのみ作用し、GitHub 上での閲覧・raw URL・MCP 経由のファイル読み取りには影響しません。他のAIとの参照経路は維持されています。
+- **リポジトリは public です**。したがって `drafts/` 配下は GitHub 上から誰でも読める状態にありました。作業ブランチの時点から同様です。
+- main へのマージにより GitHub Pages のビルド対象に入るため、リポジトリ直下に **`.nojekyll` を配置**しました。サイトは全5ページが素の HTML で、Jekyll の front matter・`_config.yml`・`_` 始まりのディレクトリを一切使っていないことを確認済みです。**`.nojekyll` によるサイト表示への影響はありません**。
+- その後の判断により、**`drafts/` を main から削除**しました。`.nojekyll` は今後のために残置しています。ドラフト一式は作業ブランチにのみ存在します。
+- ただし**コミット履歴からは内容を読めます**。履歴の書き換え（force push）は行っていません。完全に消す必要がある場合は別途ご相談ください。
 - ドラフト内容に個人情報・勤務先・役職が特定される記述がないことを確認しました。クレジットは「あっきー（AI × Suno）」で統一しています。
+- **作業ブランチを main にマージしないでください。** マージすると `drafts/` が main に復活します。
 
 ## 6. 計画者に決めていただきたいこと
 
@@ -92,4 +96,4 @@ GitHub Pages 側のURL（`https://manabi-ai-lab.github.io/drafts/...`）は参�
 ## 8. 補足
 
 決定事項をお知らせいただければ、未確定箇所の反映まで対応します。
-今後もドラフトを扱う場合、public リポジトリではなく Notion か別のプライベートリポジトリに置く運用への切り替えを検討する余地があります。
+今後のドラフト置き場は **lab-private に一本化**する方針です。この公開リポジトリには新規のドラフトを置きません。

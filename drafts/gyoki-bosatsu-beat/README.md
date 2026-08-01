@@ -68,26 +68,31 @@
 - 伝承・説話・逸話の書き分けが、断定に読める箇所がないか
 - 職業・勤務先が特定される表現が入っていないか（クレジットは「あっきー（AI × Suno）」で統一済み）
 
-## 7. 他のAIに渡すときの参照URL
+## 7. 置き場所と参照URL（重要）
 
-このメモとドラフトを別のAIに読ませる場合は、**raw URL を渡してください**。push した瞬間から最新の内容が返ります。
+**このディレクトリは main には存在しません。** 作業ブランチ `claude/gyoki-bosatsu-beat-draft-9gndo7` にのみ残しています。
+`drafts/` は 2026-08-01 に main から削除しました（`.nojekyll` は残置）。
 
-```
-https://raw.githubusercontent.com/manabi-ai-lab/manabi-ai-lab.github.io/main/drafts/gyoki-bosatsu-beat/README.md
-https://raw.githubusercontent.com/manabi-ai-lab/manabi-ai-lab.github.io/main/drafts/gyoki-bosatsu-beat/post-draft.md
-```
-
-人が読む場合は GitHub の表示でどうぞ。
+別のAIに読ませる場合は、以下の raw URL を渡してください。
 
 ```
-https://github.com/manabi-ai-lab/manabi-ai-lab.github.io/tree/main/drafts/gyoki-bosatsu-beat
+https://raw.githubusercontent.com/manabi-ai-lab/manabi-ai-lab.github.io/refs/heads/claude/gyoki-bosatsu-beat-draft-9gndo7/drafts/gyoki-bosatsu-beat/README.md
+https://raw.githubusercontent.com/manabi-ai-lab/manabi-ai-lab.github.io/refs/heads/claude/gyoki-bosatsu-beat-draft-9gndo7/drafts/gyoki-bosatsu-beat/post-draft.md
+https://raw.githubusercontent.com/manabi-ai-lab/manabi-ai-lab.github.io/refs/heads/claude/gyoki-bosatsu-beat-draft-9gndo7/drafts/gyoki-bosatsu-beat/report.md
 ```
 
-GitHub Pages 側のURL（`https://manabi-ai-lab.github.io/drafts/...`）は参照先に使わないでください。ビルドの反映にラグがあるため、更新直後は古い内容が返ることがあります。
+人が読む場合はこちらです。
 
-## 8. 公開範囲について
+```
+https://github.com/manabi-ai-lab/manabi-ai-lab.github.io/tree/claude/gyoki-bosatsu-beat-draft-9gndo7/drafts/gyoki-bosatsu-beat
+```
 
-このリポジトリは public です。したがって `drafts/` 配下の内容は、GitHub 上から誰でも読める状態にあります。
-リポジトリ直下に `.nojekyll` を置き、Pages のサイト側（`manabi-ai-lab.github.io/drafts/...`）で HTML として表示されないようにしてあります。サイトは全ページ素の HTML で Jekyll の機能を使っていないため、この設定によるサイトへの影響はありません。
+GitHub Pages 側のURL（`https://manabi-ai-lab.github.io/drafts/...`）は参照先に使わないでください。
 
-人目に触れて困る情報（個人名・勤務先・未公開の個人情報など）は、このディレクトリに置かないでください。
+**このブランチを main にマージしないでください。** マージすると `drafts/` が main に復活します。
+
+## 8. 公開範囲と今後の置き場所
+
+このリポジトリは public です。main から削除した後も、**コミット履歴からは内容を読めます**（履歴の書き換えは行っていません）。
+
+今後のドラフトは、この公開リポジトリではなく **lab-private** に一本化する方針です。人目に触れて困る情報（個人名・勤務先・未公開の個人情報など）は、このディレクトリに置かないでください。
