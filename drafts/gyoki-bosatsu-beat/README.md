@@ -68,7 +68,26 @@
 - 伝承・説話・逸話の書き分けが、断定に読める箇所がないか
 - 職業・勤務先が特定される表現が入っていないか（クレジットは「あっきー（AI × Suno）」で統一済み）
 
-## 7. 公開時の注意
+## 7. 他のAIに渡すときの参照URL
 
-このディレクトリは作業ブランチ `claude/gyoki-bosatsu-beat-draft-9gndo7` にのみ置いてあります。
-リポジトリは GitHub Pages（manabi-ai-lab.github.io）のため、**main にマージすると `drafts/` 配下も公開対象になり得ます**。ドラフトを公開したくない場合は、main に入れる前に削除するか、`.nojekyll` や公開対象の設定を先に決めてください。
+このメモとドラフトを別のAIに読ませる場合は、**raw URL を渡してください**。push した瞬間から最新の内容が返ります。
+
+```
+https://raw.githubusercontent.com/manabi-ai-lab/manabi-ai-lab.github.io/main/drafts/gyoki-bosatsu-beat/README.md
+https://raw.githubusercontent.com/manabi-ai-lab/manabi-ai-lab.github.io/main/drafts/gyoki-bosatsu-beat/post-draft.md
+```
+
+人が読む場合は GitHub の表示でどうぞ。
+
+```
+https://github.com/manabi-ai-lab/manabi-ai-lab.github.io/tree/main/drafts/gyoki-bosatsu-beat
+```
+
+GitHub Pages 側のURL（`https://manabi-ai-lab.github.io/drafts/...`）は参照先に使わないでください。ビルドの反映にラグがあるため、更新直後は古い内容が返ることがあります。
+
+## 8. 公開範囲について
+
+このリポジトリは public です。したがって `drafts/` 配下の内容は、GitHub 上から誰でも読める状態にあります。
+リポジトリ直下に `.nojekyll` を置き、Pages のサイト側（`manabi-ai-lab.github.io/drafts/...`）で HTML として表示されないようにしてあります。サイトは全ページ素の HTML で Jekyll の機能を使っていないため、この設定によるサイトへの影響はありません。
+
+人目に触れて困る情報（個人名・勤務先・未公開の個人情報など）は、このディレクトリに置かないでください。
