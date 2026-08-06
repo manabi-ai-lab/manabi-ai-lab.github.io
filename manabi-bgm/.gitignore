@@ -1,0 +1,24 @@
+# 大容量メディアは git に入れない。Release / Drive で配る。
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.flac
+*.aiff
+*.mp3
+*.m4a
+*.bin
+*.part-*
+
+# 例外：手順書に載せる小さな図やサムネイルは assets/ に置く
+!assets/**/*.jpg
+!assets/**/*.png
+
+# 作業中の一時ファイル
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+/work/
+/output/

@@ -1,0 +1,11 @@
+# テキストは LF に正規化する
+* text=auto eol=lf
+
+# Windows で実行するバッチは CRLF のまま置く
+*.bat text eol=crlf
+
+# バイナリ扱い（万一コミットされても差分を出さない）
+*.mp4 binary
+*.bin binary
+*.jpg binary
+*.png binary

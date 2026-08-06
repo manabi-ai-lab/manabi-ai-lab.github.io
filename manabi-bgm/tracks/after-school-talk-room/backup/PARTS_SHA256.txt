@@ -1,0 +1,8 @@
+738a9fcf8427dc22e679c568311f3d58121d30a69ee75082d90b523c7422d658  output/bgm/after-school-talk-room/high-quality-backup/after-school-talk-room-one-hour-youtube.part-00.bin
+7471b94f39e82e177269efc720b625c7594c06a68ad032cf005131b2424422ba  output/bgm/after-school-talk-room/high-quality-backup/after-school-talk-room-one-hour-youtube.part-01.bin
+4d8c880af1a2bc8ee21da87c28f91d6e0159f59fdeda4c4bb7d65bfa742c8d39  output/bgm/after-school-talk-room/high-quality-backup/after-school-talk-room-one-hour-youtube.part-02.bin
+29bf28f6b3e58fa559ec24d690ded1c70e1fa9e9bc4e58abf5368a864c8119f6  output/bgm/after-school-talk-room/high-quality-backup/after-school-talk-room-one-hour-youtube.part-03.bin
+0f2f6aed547125c5cd4e74cdc5882acf7416f602f6723ad2233d13bdf031c438  output/bgm/after-school-talk-room/high-quality-backup/after-school-talk-room-one-hour-youtube.part-04.bin
+21952dfbbb9a306743211ea86ee29729f53931ba64081f0b10696040d5173bd8  output/bgm/after-school-talk-room/high-quality-backup/after-school-talk-room-one-hour-youtube.part-05.bin
+5ed5a041b8aa425072a136c977f897f3f372e1498ebb875088855ec72d56fde9  output/bgm/after-school-talk-room/high-quality-backup/after-school-talk-room-one-hour-youtube.part-06.bin
+637d25887bbc0c3d97d4c5cbfbc54a430a9b10012d540c39793916e679cb7eb9  output/bgm/after-school-talk-room/high-quality-backup/after-school-talk-room-one-hour-youtube.part-07.bin
