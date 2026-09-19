@@ -33,3 +33,15 @@ style.css         全ページ共通
 
 コミット前に非公開リポジトリの `docs/PUBLICATION_CHECKLIST.md` を通すこと。
 特に、学校名・地域・個人が特定される記述と、画像のExifメタデータに注意する。
+
+## 素材台帳の作成
+
+受領した画像・音声・動画は、編集前に読み取り専用の検査コマンドで台帳化できる。
+`ffprobe` が入っている環境では、動画・音声の尺、映像寸法、fpsも記録する。
+
+```bash
+python3 tools/media_manifest.py /path/to/media --output media-manifest.json
+```
+
+出力にはファイルごとの相対パス、bytes、SHA-256が含まれる。大きな素材そのものや、
+ローカルの絶対パスを含む生成済み台帳は、この公開リポジトリへコミットしない。
