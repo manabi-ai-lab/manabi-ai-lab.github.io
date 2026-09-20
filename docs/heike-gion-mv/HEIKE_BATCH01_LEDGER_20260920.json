@@ -1,0 +1,152 @@
+{
+  "batch": "HEIKE_BATCH01_20260920",
+  "project": "祇園精舎 -The Rise and Fall- 平家物語 学習MV",
+  "slate_ref": "HEIKE_100_IMAGE_SLATE_v01 (Drive 1afUDaoPmAFBI9c3lmAgGzSfaW9ZT0fOX)",
+  "source_lock_ref": "HEIKE_SOURCE_LOCK_APPROVED_STYLE_20260919.zip (Drive 1fii0aj5QG9zPi7DVxC9MCOmtj0CQfsg0)",
+  "generator": {
+    "service": "Higgsfield",
+    "model": "nano_banana_pro",
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "pixels": "2752x1536"
+  },
+  "references": [
+    "approved_style/01_sea_battle_style.jpeg",
+    "approved_style/02_harbor_style.jpeg",
+    "approved_style/03_bell_style.jpeg",
+    "approved_style/04_narrator_style.jpeg",
+    "slate/KOYOMI_USER_REFERENCE.png"
+  ],
+  "constraints": {
+    "one_scene_per_file": true,
+    "collage": false,
+    "text_in_image": false,
+    "koyomi_uniform": "navy blazer / 3 gold buttons / left-chest crest / white shirt / dark-red tartan bow tie / navy tartan pleated skirt / navy knee socks / brown loafers"
+  },
+  "assets": [
+    {
+      "no": 1,
+      "id": "HG001A",
+      "kind": "A_koyomi_frame",
+      "file": "HG001A_narrator_koyomi.png",
+      "scene": "縁側で語り部と向き合うこよみ",
+      "cue": "instrumental B01",
+      "qa": "visual",
+      "status": "candidate",
+      "sha256": "af4e86516f2db69e0c9c373c0ca397e7537c05d777ea3d59f5afa1b113328168"
+    },
+    {
+      "no": 2,
+      "id": "HG006A",
+      "kind": "A_koyomi_frame",
+      "file": "HG006A_koyomi_bell.png",
+      "scene": "鐘楼で大鐘を見上げるこよみ",
+      "cue": "L02",
+      "qa": "video_analysis",
+      "status": "candidate",
+      "sha256": "8140373e2be5a8d36b09a773452e5f322032c0f3bc71f5f0294ceda1a0ecfa51"
+    },
+    {
+      "no": 3,
+      "id": "HG059A",
+      "kind": "A_koyomi_frame",
+      "file": "HG059A_koyomi_shore_after.png",
+      "scene": "海戦後の浜辺に立つこよみ",
+      "cue": "L44",
+      "qa": "visual",
+      "status": "candidate",
+      "sha256": "b8c9b6b9dfb19405d47467fa2ff934d25567581a903ed2d8b69b2d2b2acc298c"
+    },
+    {
+      "no": 4,
+      "id": "HG017B",
+      "kind": "B_history",
+      "file": "HG017B_song_ships_harbor.png",
+      "scene": "福原の港に入る宋船",
+      "cue": "L10",
+      "qa": "visual",
+      "status": "candidate",
+      "sha256": "66339d48a5d53c6cdb6ea2ef049b7a9e3429c153392a69428443e61c91e68c45"
+    },
+    {
+      "no": 5,
+      "id": "HG035A",
+      "kind": "B_history",
+      "file": "HG035A_miyakoochi.png",
+      "scene": "都落ち、門を振り返る一行",
+      "cue": "L23",
+      "qa": "video_analysis",
+      "status": "candidate",
+      "sha256": "3624d62f6f935fe2cc1ed45ac810ad4b5b88baa1b83095ffc3e85dc56da23497"
+    },
+    {
+      "no": 6,
+      "id": "HG049A",
+      "kind": "B_history",
+      "file": "HG049A_kumagai_hesitation.png",
+      "scene": "熊谷直実のためらい",
+      "cue": "L34",
+      "qa": "video_analysis",
+      "status": "candidate",
+      "note": "1st job failed; regenerated without a lying figure",
+      "sha256": "a3e39da0f44d877086956e1f1a4de3c921c1d94e1872e283713349a2c324f16c"
+    },
+    {
+      "no": 7,
+      "id": "HG048B",
+      "kind": "B_history",
+      "file": "HG048B_atsumori_flute.png",
+      "scene": "若き敦盛の笛",
+      "cue": "L33",
+      "qa": "video_analysis",
+      "status": "candidate",
+      "sha256": "abc145e208896d0ad7247fc66f0139b004827d67538f72e14e82f0df5cd63395"
+    },
+    {
+      "no": 8,
+      "id": "HG051A",
+      "kind": "B_history",
+      "file": "HG051A_yoichi_bow.png",
+      "scene": "弓を引く那須与一 v1",
+      "cue": "L36",
+      "qa": "video_analysis",
+      "status": "replaced_by_v2",
+      "note": "v1: red armor and burning ships in background (video analysis); superseded by v2",
+      "sha256": "3ac90d3f18e2c90fe1bf5a4f67fefda716bedfd76c2fa33bbb483e68590f354e"
+    },
+    {
+      "no": 9,
+      "id": "HG055A",
+      "kind": "B_history",
+      "file": "HG055A_dannoura_ships.png",
+      "scene": "壇ノ浦、迫る舟と矢の雨",
+      "cue": "L40",
+      "qa": "video_analysis",
+      "status": "candidate",
+      "sha256": "79746454c6775588d8268b8683d0f789c299a64956c2f960ba6dc1e1e720a3e8"
+    },
+    {
+      "no": 10,
+      "id": "HG051A",
+      "kind": "B_history",
+      "file": "HG051A_yoichi_bow_v2.png",
+      "scene": "弓を引く那須与一 v2",
+      "cue": "L36",
+      "qa": "video_analysis",
+      "status": "candidate",
+      "sha256": "afa8ed3bcfaa0ecad326e24dfa9d43412072d4b2c618092d8108feff857b252e",
+      "note": "dark green o-yoroi with yellow-green lacing, calm sea, Taira boats with plain red banners, full draw (video analysis)"
+    }
+  ],
+  "not_started": [
+    "HG011A Kiyomori (needs past-work reference)",
+    "B06 Fujikawa",
+    "B09 Ichinotani cliff",
+    "HG051B fan target",
+    "HG058A/B Tomomori",
+    "B15 ending",
+    "HG017A",
+    "HG008A",
+    "HG052A"
+  ]
+}
