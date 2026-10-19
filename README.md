@@ -15,6 +15,9 @@ educators/        教育 × AI 実践ノート（大人向け）
 projects/         制作実績（工程の記録）
 about/            このサイトについて
 style.css         全ページ共通
+404.html          見つからないページ用
+favicon.svg / apple-touch-icon.png / assets/ogp.png   アイコンとSNS共有画像
+sitemap.xml / robots.txt                              検索エンジン向け
 ```
 
 フレームワークは意図的に入れていない。1ページ足せば即公開できる軽さを優先する。
@@ -25,6 +28,7 @@ style.css         全ページ共通
 - 作品が増えたら … `kids/` と `projects/` にカードを1枚ずつ
 - 制作で新しく詰まったことがあれば … `educators/` に `.memo` を1つ
 - **新しいページを作る前に、既存ページに足せないか考える**
+- ページを足したら … `<head>` に canonical / og: タグをコピーし、`sitemap.xml` に1行足す
 
 ## 公開前に必ず
 
